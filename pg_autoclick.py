@@ -4,7 +4,10 @@ import random
 import os
 import argparse
 
-# to make a folder for images to be clicked
+# failsafe
+pg.FAILSAFE = True
+
+# to make a folder for the images to be clicked
 image_folder = 'pg_img'
 if not os.path.exists(image_folder):
     os.makedirs(image_folder)
